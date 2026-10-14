@@ -14,6 +14,11 @@ class Cat (val name: String, var age: Int, var weight: Int) {
     }
 
     fun eat(amount: Int) {
-        weight += amount
+        if (weight + amount > 20) {
+            println("Cats weight cannot exceed 20")
+        } else {
+            weight += amount
+        }
+
     }
 }
