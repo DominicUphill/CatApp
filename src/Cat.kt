@@ -13,7 +13,7 @@ class Cat (val name: String, var age: Int, var weight: Int) {
         return "Name: $name Age: $age Weight: $weight"
     }
 
-    fun eat(amount: int) {
+    fun eat(amount: Int) {
         weight += amount
     }
 }
